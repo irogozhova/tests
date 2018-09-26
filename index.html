@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="basediv offsetY-xl offsetY-reset-top">one</div>
+  <div class="basediv offsetY-xl">two</div>
+  <div class="basediv offsetY-xl offsetY-reset-bottom">three</div>
+
+  <style>
+    .basediv {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      border: 1px solid black;
+    } 
+
+    .offsetY-xl {
+      margin-top: 45px; /*these are for desktop, mobile should be 35px*/
+      margin-bottom: 45px;
+    }
+    .offsetY-l {
+      margin-top: 30px; /*these are for desktop, mobile should be 35px*/
+      margin-bottom: 30px;
+    }
+    .offsetY-reset-top { /*for resetting top margin*/
+      margin-top: 0;
+    }
+    .offsetY-reset-bottom {
+      margin-bottom: 0;
+    }
+  </style>
+  
+  <script src="script.js"></script>
+</body>
+</html>
